@@ -1,6 +1,9 @@
-# To run this test cace navidate to root directy (\User_Management_RESTFull_API\app\tests>) of the project
-# then run
-# "python -m unittest test_user"
+# To run this test cace navidate to root directy (\User_Management_RESTFull_API>) of the project
+# Run the tests
+# python -m unittest discover -s app/tests -p "test_user.py"
+
+# To run all test case inside app/tests fil use bellow command
+# python -m unittest discover -s app/tests -p "*.py"
 
 import unittest
 import sys

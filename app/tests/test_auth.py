@@ -1,14 +1,11 @@
-# To run this test cace navidate to root directy (\User_Management_RESTFull_API\app\tests>) of the project
-# then run
-# "python -m unittest test_auth"
+# To run this test cace navidate to root directy (\User_Management_RESTFull_API\>) of the project
+# Run the tests
+# python -m unittest discover -s app/tests -p "test_auth.py"
+
+# To run all test case inside app/tests fil use bellow command
+# python -m unittest discover -s app/tests -p "*.py"
 
 import unittest
-import sys
-import os
-
-# Get the current file's directory and append the parent directory to sys.path
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '...', 'app')))
-
 from app import app
 
 class AuthTestCase(unittest.TestCase):
